@@ -8,6 +8,7 @@ hideturtle()
 speed(0)
 sqr_len=40
 health_x = 170
+health_y = 355
 
 #Draws Stats
 
@@ -52,7 +53,7 @@ def Stats_Draw():
 def Drain_Health():
     penup()
     pen(pencolor="black", fillcolor="black",pensize=2, speed=0)
-    setpos(health_x,355)
+    setpos(health_x,health_y)
     pendown()
     begin_fill()
     for i in range(0,2):
